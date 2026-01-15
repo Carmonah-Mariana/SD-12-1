@@ -1,6 +1,6 @@
 // Task 3: addUser(first_name, last_name, email)
 
-export function addUser(primer_nombte, apellido, correo_electronico){
+export function addUser(primer_nombre, apellido, correo_electronico){
     fetch('http://localhost:3000/users', {
         method: 'POST',
         headers: {
@@ -8,7 +8,7 @@ export function addUser(primer_nombte, apellido, correo_electronico){
         },
         body: JSON.stringify({
             id : 6,
-            first_name: primer_nombte,
+            first_name: primer_nombre,
             last_name: apellido,
             email: correo_electronico
         }),
